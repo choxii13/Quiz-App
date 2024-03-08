@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(
+    162deg,
+    rgb(37, 48, 48) 5%,
+    rgba(56, 79, 78, 1) 17%,
+    rgba(68, 89, 89, 1) 32%,
+    rgb(108, 142, 140) 47%,
+    rgb(55, 82, 84) 65%,
+    rgb(54, 78, 82) 82%,
+    rgb(59, 86, 81) 96%
+  );
+  height: 100vh;
+}
+
+header {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.6rem;
+  margin: 0;
+  text-transform: uppercase;
+  color: aqua;
+  font-weight: 700;
+}
+
+#quiz {
+  max-width: 50rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(
+    162deg,
+    rgba(61, 89, 89, 1) 5%,
+    rgba(56, 79, 78, 1) 17%,
+    rgba(68, 89, 89, 1) 32%,
+    rgb(108, 142, 140) 47%,
+    rgb(55, 82, 84) 65%,
+    rgb(54, 78, 82) 82%,
+    rgb(101, 206, 187) 96%
+  );
+  overflow-y: auto;
+  box-shadow: 0vh 0vh 10vh 0.3vh rgb(25, 31, 30);
+  background-color: rgba(116, 126, 136, 0.2);
+  border-radius: 10px;
+}
+
+#question progress {
+  width: 80%;
+  height: 2rem;
+  border-radius: 24px;
+  background: #5c0202;
+  margin: 0;
+}
+
+#question progress::-webkit-progress-bar {
+  color: #000000;
+  border-radius: 24px;
+}
+
+#question progress::-webkit-progress-value {
+  color: #000000;
+  border-radius: 24px;
+}
+
+#question h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 2.5rem 0;
+  color: #030303;
+  text-shadow: 0.2vh 0.2vh 2vh rgb(94, 25, 17);
+}
+
+#answers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.answer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.answer button {
+  display: inline-block;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border: none;
+  color: #ded6d6;
+  border-radius: 24px;
+  background: #181d1e;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer button:hover,
+.answer button:focus {
+  background: #107964;
+  color: rgb(233, 232, 232);
+}
+
+#correct,
+#wrong,
+#pass {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+#correct span {
+  color: rgb(0, 230, 0);
+  font-weight: 700;
+}
+#wrong span {
+  color: rgb(230, 0, 0);
+  font-weight: 700;
+}
+#pass span {
+  color: rgb(192, 230, 0);
+  font-weight: 700;
+}
