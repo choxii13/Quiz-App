@@ -119,22 +119,28 @@ header h1 {
   color: rgb(233, 232, 232);
 }
 
-#correct,
-#wrong,
-#pass {
+.answer-div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.answer-item {
+  display: flex;
+  justify-content: space-between;
   font-size: 2rem;
+}
+.answer-item h3 {
   color: rgb(0, 0, 0);
+}
+.answer-item p {
   font-weight: 800;
 }
-#correct span {
+#correct {
   color: rgb(0, 230, 0);
-  font-weight: 700;
 }
-#wrong span {
+#wrong {
   color: rgb(230, 0, 0);
-  font-weight: 700;
 }
-#pass span {
-  color: rgb(192, 230, 0);
-  font-weight: 700;
+#pass {
+  color: rgb(255, 251, 4);
 }

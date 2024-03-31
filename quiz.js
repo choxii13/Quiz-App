@@ -78,12 +78,21 @@ function quizDetails() {
     }</button></li>
   </ul>`;
   } else {
-    quiz = ` <p id="correct"> Correct Answer: <span> ${scores.correct}/ 10 </span></p>
-    <br>
-<p id="wrong"> Wrong Answer:<span> ${scores.wrong} </span> </p>
-    <br>
-    <p id="pass">Pass: <span>${scores.pass} </span>  </p>
-    <br>`;
+    quiz = ` 
+    <div class='answer-div'> 
+    <div class='answer-item'>
+    <h3>Correct Answer: </h3>
+    <p id='correct'> ${scores.correct} </p>
+    </div> 
+    <div class='answer-item'>
+    <h3>Wrong Answer: </h3>
+    <p id='wrong'> ${scores.wrong} </p>
+    </div> 
+    <div class='answer-item'>
+    <h3>No answer: </h3>
+    <p id='pass'> ${scores.pass} </p>
+    </div> 
+  `;
   }
   document.getElementById("quiz").innerHTML = quiz;
 }
