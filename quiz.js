@@ -82,7 +82,7 @@ function quizDetails() {
     <br>
 <p id="wrong"> Wrong Answer:<span> ${scores.wrong} </span> </p>
     <br>
-    <p id="pass">Pass Answer:   <span>${scores.pass} </span>  </p>
+    <p id="pass">Pass: <span>${scores.pass} </span>  </p>
     <br>`;
   }
   document.getElementById("quiz").innerHTML = quiz;
